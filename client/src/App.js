@@ -17,7 +17,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Hello There This is Multi Docker FIB app
+            Fib Calculator
           </a>
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
