@@ -1,6 +1,6 @@
-docker build -t dmalvania/multi-client:latest -t dmalvania/multi-client:$SHA ./client/Dockerfile ./client
-docker build -t dmalvania/multi-server:latest -t dmalvania/multi-server:$SHA ./server/Dockerfile ./server
-docker build -t dmalvania/multi-worker:latest -t dmalvania/multi-worker:$SHA ./worker/Dockerfile ./worker
+docker build -t dmalvania/multi-client:latest -t dmalvania/multi-client:$SHA  -f ./client/Dockerfile ./client
+docker build -t dmalvania/multi-server:latest -t dmalvania/multi-server:$SHA  -f ./server/Dockerfile ./server
+docker build -t dmalvania/multi-worker:latest -t dmalvania/multi-worker:$SHA  -f ./worker/Dockerfile ./worker
 docker push dmalvania/multi-client:latest
 docker push dmalvania/multi-server:latest
 docker push dmalvania/multi-worker:latest
